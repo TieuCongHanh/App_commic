@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/seachView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Tìm kiếm..." />
+    </LinearLayout>
+    <!-- Banner quảng cáo -->
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="15dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpr"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="5dp"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- RecyclerView hàng ngang - Top 15 truyện tranh nhiều lượt xem -->
+
+
+    <!-- RecyclerView dọc - Top 40 truyện tranh mới nhất -->
+    <TextView
+        android:id="@+id/titleLatest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách truyện tranh mới nhất"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_ComicList"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+</LinearLayout>
+
+</ScrollView>

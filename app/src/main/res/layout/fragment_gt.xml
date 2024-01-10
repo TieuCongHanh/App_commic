@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="20dp"
+    tools:context=".FRAGMENT.fragment_gt">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtAuther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="â"
+
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtDescription"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="â"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xem bình luận"
+            android:layout_gravity="center"
+            android:id="@+id/showcm"/>
+    </LinearLayout>
+
+
+</ScrollView>

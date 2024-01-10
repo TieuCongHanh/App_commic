@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Read_Chapter">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/showtren">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:id="@+id/quaylaichitiet"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/showcomic"
+            android:layout_marginLeft="295dp"
+            android:src="@drawable/ba_gach_24"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/readChapter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="-80dp"
+            android:id="@+id/recychapter"
+            android:layout_width="80dp"
+            android:layout_marginBottom="50dp"
+
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showduoi"
+        android:layout_marginTop="-50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnPrevious"
+            android:src="@drawable/baseline_navigate_back_24"
+            android:rotation="180"
+            />
+        <ImageView
+            android:layout_marginLeft="122dp"
+            android:layout_marginRight="122dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btncm"
+            android:src="@drawable/baseline_comment_24"
+            android:rotation="180"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnNext"
+            android:src="@drawable/baseline_navigate_next_24"/>
+    </LinearLayout>
+</LinearLayout>
